@@ -1,0 +1,10 @@
+D:\KW_DATA\97_GIT\Hackertone\_sources\0110_Network_Arduino_with_App\App_Protocol_Parser\Protocol_Parser\bin\Debug\Protocol_Parser.exe.config
+D:\KW_DATA\97_GIT\Hackertone\_sources\0110_Network_Arduino_with_App\App_Protocol_Parser\Protocol_Parser\bin\Debug\Protocol_Parser.exe
+D:\KW_DATA\97_GIT\Hackertone\_sources\0110_Network_Arduino_with_App\App_Protocol_Parser\Protocol_Parser\bin\Debug\Protocol_Parser.pdb
+D:\KW_DATA\97_GIT\Hackertone\_sources\0110_Network_Arduino_with_App\App_Protocol_Parser\Protocol_Parser\obj\Debug\Protocol_Parser.csprojAssemblyReference.cache
+D:\KW_DATA\97_GIT\Hackertone\_sources\0110_Network_Arduino_with_App\App_Protocol_Parser\Protocol_Parser\obj\Debug\Protocol_Parser.FrmAnalytics.resources
+D:\KW_DATA\97_GIT\Hackertone\_sources\0110_Network_Arduino_with_App\App_Protocol_Parser\Protocol_Parser\obj\Debug\Protocol_Parser.Properties.Resources.resources
+D:\KW_DATA\97_GIT\Hackertone\_sources\0110_Network_Arduino_with_App\App_Protocol_Parser\Protocol_Parser\obj\Debug\Protocol_Parser.csproj.GenerateResource.cache
+D:\KW_DATA\97_GIT\Hackertone\_sources\0110_Network_Arduino_with_App\App_Protocol_Parser\Protocol_Parser\obj\Debug\Protocol_Parser.csproj.CoreCompileInputs.cache
+D:\KW_DATA\97_GIT\Hackertone\_sources\0110_Network_Arduino_with_App\App_Protocol_Parser\Protocol_Parser\obj\Debug\Protocol_Parser.exe
+D:\KW_DATA\97_GIT\Hackertone\_sources\0110_Network_Arduino_with_App\App_Protocol_Parser\Protocol_Parser\obj\Debug\Protocol_Parser.pdb
