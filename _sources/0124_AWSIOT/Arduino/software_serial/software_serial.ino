@@ -28,6 +28,7 @@
 #include <SoftwareSerial.h>
 
 SoftwareSerial mySerial(3, 2); // RX, TX
+const int LED = 12;
 
 void setup() {
   // Open serial communications and wait for port to open:
@@ -38,13 +39,37 @@ void setup() {
 
   // set the data rate for the SoftwareSerial port
   mySerial.begin(9600);
+
+  // LED
+  pinMode(LED, OUTPUT);
 }
 
 void loop() { // run over and over
   if (mySerial.available()) {
-    Serial.write(mySerial.read());
+    //Serial.write(mySerial.read());
+    char data = mySerial.read();
+    Serial.write(data);
+
+    //받은 값에서 LED제어
+    //controlLED(data);
+    if (data == 'Y')
+      digitalWrite(LED, HIGH);
+    else if (data == 'N')
+      digitalWrite(LED, LOW); 
   }
   if (Serial.available()) {
     mySerial.write(Serial.read());
+  }
+}
+
+void controlLED(char data){
+  if (data == '|'){
+    char temp = mySerial.read();
+    temp = mySerial.read();
+    Serial.write(temp);
+    if (temp == 'Y')
+      digitalWrite(LED, HIGH);
+    else if (temp == 'N')
+      digitalWrite(LED, LOW);
   }
 }
