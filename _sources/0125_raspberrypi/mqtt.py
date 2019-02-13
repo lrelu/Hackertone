@@ -21,7 +21,7 @@ try:
         t = "23"
         # temp/random 이라는 토픽에 t라는 데이터를 보낸다
         #client.publish("temp/random", t)
-        client.publish("scada/kw/degree", "hello this kcci raspbian")
+        client.publish("robotline/ra1", "hello this kcci raspbian")
         time.sleep(2) #2초 간격으로 계속 보내게 하기!
 
 

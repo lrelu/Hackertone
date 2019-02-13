@@ -9,13 +9,17 @@ GPIO.setup(servo_pin, GPIO.OUT)
 p = GPIO.PWM(servo_pin, 50)
 p.start(7.5)
 
+temp = input()
+p.ChangeDutyCycle(temp)
+
 try:
     while True:
-        p.ChangeDutyCycle(7.5)
-        time.sleep(1)
-        p.ChangeDutyCycle(10.5)
-        time.sleep(1)
-        p.ChangeDutyCycle(2.5)
+
+        # p.ChangeDutyCycle(7.5)
+        # time.sleep(1)
+        # p.ChangeDutyCycle(10.5)
+        # time.sleep(1)
+        # p.ChangeDutyCycle(2.5)
         time.sleep(3)
 except KeyboardInterrupt:
     p.stop()
