@@ -16,8 +16,8 @@ client.on_message = on_message
 print("conneting to broker")
 client.connect(broker_address, port=1883, keepalive=60)
 client.loop_start()
-print("subscribing to topic", "scada/kw/degree")
-client.subscribe("scada/kw/degree")
+print("subscribing to topic", "hackertone/raspbian/people")
+client.subscribe("hackertone/raspbian/people")
 
 try:
     while True:

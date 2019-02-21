@@ -1,16 +1,41 @@
 import RPi.GPIO as GPIO
 import time
 
-
 class servo_handler:
-    robot_run = 0
+    setup = False
+    running = False
 
-    @classmethod
-    def __init__(cls):
+    mqtt = mqtt_handler.MQTT("broker.mqttdashboard.com")
+
+    #loopPerSecond = 1000
+    #servoPerSecond = 100
+
+    #loopCount = 0
+
+    def __init__(self):
         return
 
-    @classmethod
-    def test(cls):
-        print("test")
+    def setup(self):
+        self.setup = True
+        self.running = True
 
-servo_handler.test()
+        self.mqtt.subscribe()
+        time.sleep(1)
+        self.mqtt.publish("connect robot arm")
+        return
+
+    def loop(self):
+        if not self.setup:
+            return
+
+        while self.running:
+
+
+
+            time.sleep(0.01)
+        return
+
+
+servo = servo_handler()
+servo.setup()
+servo.loop()
