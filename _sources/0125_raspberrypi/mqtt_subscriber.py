@@ -1,6 +1,8 @@
 import paho.mqtt.client as mqtt
 import time
 
+class Temp:
+
 def on_message(client, userdata, message):
     print("message receive ", str(message.payload.decode("utf-8")))
     print("message topic=", message.topic)
@@ -17,7 +19,7 @@ print("conneting to broker")
 client.connect(broker_address, port=1883, keepalive=60)
 client.loop_start()
 print("subscribing to topic", "hackertone/raspbian/people")
-client.subscribe("hackertone/raspbian/people")
+client.subscribe("test_topic")
 
 try:
     while True:
